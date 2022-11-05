@@ -1,0 +1,24 @@
+{
+  "name": "wizytowka",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "pinia": "^2.0.23",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.2",
+    "@vue/cli-service": "~5.0.8",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "vite": "^3.1.8",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
