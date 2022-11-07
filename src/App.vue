@@ -18,11 +18,11 @@ export default {
 
 <style>
 #app {
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-
+ width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    overflow-x: hidden; 
   
 }
 </style>

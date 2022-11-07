@@ -12,11 +12,12 @@
 
 <style scoped lang="scss">
 .main {
-    height: 150px;
+    height: 180px;
     background-color: #3d008d;
      display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 0;
   }
   .main nav {
      width: 90%;

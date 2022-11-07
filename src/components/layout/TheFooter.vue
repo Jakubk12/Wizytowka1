@@ -6,8 +6,8 @@
     .footer {
         width: 100%;
         height: 20vh;
+        margin-bottom: 0;
         background-color:  #36486b;
-        margin-top: 30vh;
         margin-bottom: 0;
     }
 </style>

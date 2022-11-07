@@ -1,5 +1,6 @@
 <template>
-<div class="first">
+<div class="main">
+<div class="slider-parent">
 <div class="slider">
 <div class="top"></div>
 <div class="bottom"></div>
@@ -14,28 +15,51 @@
     <slider-right-button @click="rightSlide"></slider-right-button>
     </div>
     </div>
+    </div>
 
 </template>
 
 <style scoped  lang="scss">
-.first {
-    margin-top: 5%;
+.main {
+    display: flex;
+    margin-top: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+      
+}
+.slider-parent {
+    margin-top: 20px;
         margin-left: 25%;
         width: 675px;
-        display: block;
+        left: 0;
+        top: 0;
 }
     .slider {
-        margin-top: 5%;
-        width: 600px;
-        height: 600px;
+        
+        width: 550px;
+        height: 550px;
         background: yellow;
-        transform: perspective(800px), rotateX(270deg), rotate(0deg), rotate TranslateZ(-150deg);
+        transform: perspective(800px), rotateX(180deg), rotate(0deg), rotate TranslateZ(-150deg);
         transform-style: preserve-3d;
         transition: 2000ms;
 
 }
 .top, .bottom, .left, .right {
-    width: 100%;
+    width: 75%;
     height: 600px;
     position: absolute;
     box-shadow: 0 0 5px 0 #ccc, inset 0 0 10px 0 #ccc;
@@ -77,6 +101,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+      margin-top: 10px;
+
 
 }
 </style>
@@ -97,14 +123,14 @@ data(){
 methods: {
 leftSlide(){
     this.Change += 90;
-    document.querySelector('.slider').style.transform = `perspective(800px) rotateX(90deg) rotate(${this.Change}deg) rotateY(10deg) translateZ(-150px)`;
+    document.querySelector('.slider').style.transform = `perspective(800px) rotateX(90deg) rotate(${this.Change}deg)  translateZ(-80px)`;
 
 },
  rightSlide() {
       this.Change -= 90;
       document.querySelector(
         ".slider"
-      ).style.transform = `perspective(800px) rotateX(90deg) rotate(${this.Change}deg) rotateY(10deg) translateZ(-150px)`;
+      ).style.transform = `perspective(800px) rotateX(90deg) rotate(${this.Change}deg)  translateZ(-80px)`;
     },
 }
 }
