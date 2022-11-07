@@ -12,7 +12,7 @@
         font-family: 'Courier New', Courier, monospace;
         font-weight: 900;
         border: none;
-        width: 10%;
+        width: 8%;
     &:hover{
         background: #FF521B;
         transition: 0.2s all;

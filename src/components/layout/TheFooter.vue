@@ -2,7 +2,7 @@
     <div class="footer"></div>
 </template>
 
-<style scoped  lang="scss">
+<style scoped lang="scss">
     .footer {
         width: 100%;
         height: 20vh;
