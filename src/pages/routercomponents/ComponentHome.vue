@@ -42,16 +42,16 @@
       
 }
 .slider-parent {
-    margin-top: 20px;
-        margin-left: 25%;
+    margin-top: 40px;
+    margin-left: 20%;
         width: 675px;
         left: 0;
         top: 0;
 }
     .slider {
-        
-        width: 550px;
-        height: 550px;
+    
+        width: 75%;
+        height: 45%;
         background: yellow;
         transform: perspective(800px), rotateX(180deg), rotate(0deg), rotate TranslateZ(-150deg);
         transform-style: preserve-3d;
@@ -59,24 +59,26 @@
 
 }
 .top, .bottom, .left, .right {
-    width: 75%;
-    height: 600px;
+    width: 35%;
+    height: 400px;
     position: absolute;
     box-shadow: 0 0 5px 0 #ccc, inset 0 0 10px 0 #ccc;
     border-radius: 12px;
 
     }
+     
+      
     .top {
   transform: rotateX(90deg) translate3d(0, 150px, 150px);
   background: Green;
-    width: 75%;
+   width: 75%;
     height: 75%;
 
 }
 .bottom {
   transform: rotateX(90deg) translate3d(0, 150px, -250px);
   background: Blue;
- width: 75%;
+   width: 75%;
     height: 75%;
 
 
@@ -101,7 +103,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-      margin-top: 10px;
+      margin-top: 125px;
 
 
 }
@@ -110,6 +112,7 @@
 <script>
 import SliderLeftButton from './UI/SliderLeftButton.vue';
 import SliderRightButton from './UI/SliderRightButton.vue'
+
 
 export default {
 components: {
@@ -123,14 +126,14 @@ data(){
 methods: {
 leftSlide(){
     this.Change += 90;
-    document.querySelector('.slider').style.transform = `perspective(800px) rotateX(90deg) rotate(${this.Change}deg)  translateZ(-80px)`;
+    document.querySelector('.slider').style.transform = `perspective(800px) rotateX(90deg) rotate(${this.Change}deg)  translateZ(-150px)`;
 
 },
  rightSlide() {
       this.Change -= 90;
       document.querySelector(
         ".slider"
-      ).style.transform = `perspective(800px) rotateX(90deg) rotate(${this.Change}deg)  translateZ(-80px)`;
+      ).style.transform = `perspective(800px) rotateX(90deg) rotate(${this.Change}deg)  translateZ(-150px)`;
     },
 }
 }

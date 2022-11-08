@@ -17,12 +17,18 @@ export default {
 </script>
 
 <style>
+
 #app {
- width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0px;
-    overflow-x: hidden; 
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
+    @media all and (max-width:900px) {
+      #app {
+        width: 100%;
+      }
+    
+    
   
 }
 </style>

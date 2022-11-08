@@ -12,12 +12,17 @@
 
 <style scoped lang="scss">
 .main {
+   float: center;
+        margin-right: 0;
+        height: 5%;
+        width: 100%;
+        display: flex;
     height: 180px;
     background-color: #3d008d;
-     display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 0;
+ 
   }
   .main nav {
      width: 90%;
@@ -63,9 +68,18 @@
      }
   }
   
+  
      
 }
 
+        @media all and (max-width:900px) {
+        .main ul {  display: inline-block;       }
+        }
+         @media all and (max-width:600px) {
+        .main ul {  
+          margin-left: -50%;
+        }
+        }
 h1 {
     margin: 0;
 }

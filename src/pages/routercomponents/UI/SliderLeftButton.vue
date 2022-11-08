@@ -24,5 +24,10 @@
         color: black
     }
     }
+        @media all and (max-width:900px) {
+            .switch-left {
+            width: 15%;
+            }
+        }
     
 </style>
