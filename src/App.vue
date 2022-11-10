@@ -22,6 +22,7 @@ export default {
   width: 100%;
   overflow-x: hidden;
   height: 100%;
+   font-family: 'Source Sans Pro', sans-serif;
 }
     @media all and (max-width:900px) {
       #app {

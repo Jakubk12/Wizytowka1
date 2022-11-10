@@ -1,10 +1,13 @@
 <template>
 <div class="main">
+  
     <nav>
      <h1> <router-link to="/routercomponents"><button class="inner">Home</button></router-link></h1>
-              <ul>  <h1><router-link to="/routercomponents/:id"><button class="inner">Projects</button></router-link> </h1>
+     <p class="animated">Welcome to frontend developer's card</p>
+
+                <h1><router-link to="/routercomponents/:id"><button class="inner">Projects</button></router-link> </h1>
                      <h1>   <router-link to="/projects"><button class="inner">About</button></router-link> </h1>
-        </ul>
+      
     </nav>
     
 </div>
@@ -22,8 +25,27 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 0;
- 
+  .animated {
+    animation: grow-animation 8s linear infinite, color-change 8s infinite;
+    
   }
+  @keyframes grow-animation {
+    0%{transform:scale(1.0)}
+    25%{transform:scale(1.50)}
+    50%{transform:scale(2.00)}
+    75%{transform:scale(1.50)}
+    100%{transform:scale(1.00)}
+  }
+}
+
+@keyframes color-change {
+  0% { color: #ffa200; }
+  25% { color: #16142e}
+  50% { color: #0eff00;}
+  75% { color: #16142e }
+  100% { color: #ffa200; }
+}
+
   .main nav {
      width: 90%;
   margin: auto;
