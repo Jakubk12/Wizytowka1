@@ -1,6 +1,6 @@
 <template>
  <div class="container">
-      <projects-resources v-for="Element in storedElements" :key="Element.id" :title="Element.title" :description="Element.description" :img="Element.img">  </projects-resources>
+      <projects-resources v-for="Element in storedElements" :key="Element.id" :title="Element.title" :description="Element.description" :img="Element.img"></projects-resources>
       </div>
     
 </template>

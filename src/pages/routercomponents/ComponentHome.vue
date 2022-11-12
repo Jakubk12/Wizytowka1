@@ -11,7 +11,7 @@
 
 <div class="last">
 
-<slider-left-button @click="leftSlide"></slider-left-button>
+<slider-left-button v-model="Change" @click="leftSlide"></slider-left-button>
     <slider-right-button @click="rightSlide"></slider-right-button>
     </div>
     </div>
@@ -126,12 +126,12 @@ data(){
 methods: {
 leftSlide(){
     this.Change += 90;
-    document.querySelector('.slider').style.transform = `perspective(800px) rotateX(90deg) rotate(${this.Change}deg)  translateZ(-150px)`;
+    this.$el.querySelector('.slider').style.transform = `perspective(800px) rotateX(90deg) rotate(${this.Change}deg)  translateZ(-150px)`;
 
 },
  rightSlide() {
       this.Change -= 90;
-      document.querySelector(
+       this.$el.querySelector(
         ".slider"
       ).style.transform = `perspective(800px) rotateX(90deg) rotate(${this.Change}deg)  translateZ(-150px)`;
     },

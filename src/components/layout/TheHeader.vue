@@ -1,6 +1,5 @@
 <template>
 <div class="main">
-  
     <nav>
      <h1> <router-link to="/routercomponents"><button class="inner">Home</button></router-link></h1>
      <p class="animated">Welcome to frontend developer's card</p>
@@ -15,7 +14,6 @@
 
 <style scoped lang="scss">
 .main {
-   float: center;
         margin-right: 0;
         height: 5%;
         width: 100%;
@@ -27,6 +25,12 @@
   padding-bottom: 0;
   .animated {
     animation: grow-animation 8s linear infinite, color-change 8s infinite;
+      list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
     
   }
   @keyframes grow-animation {
@@ -53,20 +57,12 @@
   justify-content: space-between;
   align-items: center;
   }
-  .main ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .inner {
   background-color: #3d008d;
   margin: 0 6.5rem;
   text-decoration: none;
-  display: inline-block;
   padding: 0.75rem 1.5rem;
   color: White;
   font-weight: 900;
@@ -94,12 +90,23 @@
      
 }
 
-        @media all and (max-width:900px) {
-        .main ul {  display: inline-block;       }
+        @media all and (max-width:1000px) {
+        .main {  display: flex; 
+        height: 30vh;  
+        justify-content: space-around;    }
+        .animated {
+          scale: 0.75;
+          animation: grow-animation 8s linear infinite, color-change 8s infinite;
+          
+
+        }
+        .inner {
+          margin: 0 auto;
+        }
         }
          @media all and (max-width:600px) {
-        .main ul {  
-          margin-left: -50%;
+        .inner {  
+          
         }
         }
 h1 {
