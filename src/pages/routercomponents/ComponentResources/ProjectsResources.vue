@@ -21,9 +21,7 @@ export default {
 margin-bottom: 15vh;
 margin-right: 5vw;
 margin-left: 2vw; 
- .head {
-  font-weight: 600;
-}
+
 .img{
   width: 15vw;
   height: 15vw;

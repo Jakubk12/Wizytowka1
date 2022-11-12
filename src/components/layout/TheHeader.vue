@@ -15,7 +15,6 @@
 <style scoped lang="scss">
 .main {
         margin-right: 0;
-        height: 5%;
         width: 100%;
         display: flex;
     height: 180px;
@@ -95,10 +94,7 @@
         height: 30vh;  
         justify-content: space-around;    }
         .animated {
-          scale: 0.75;
-          animation: grow-animation 8s linear infinite, color-change 8s infinite;
-          
-
+          scale: 0.75
         }
         .inner {
           margin: 0 auto;

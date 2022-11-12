@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style>
+<style  lang="scss">
 
 #app {
   width: 100%;
@@ -24,12 +24,8 @@ export default {
   height: 100%;
    font-family: 'Source Sans Pro', sans-serif;
 }
-    @media all and (max-width:900px) {
-      #app {
-        width: 100%;
-      }
-    
-    
-  
-}
+ .head {
+  font-weight: 900;
+   text-shadow: 2px 2px 15px green;}
+
 </style>
