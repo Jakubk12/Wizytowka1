@@ -23,7 +23,7 @@
   align-items: center;
   padding-bottom: 0;
   .animated {
-    animation: grow-animation 8s linear infinite, color-change 8s infinite;
+    animation: grow-animation 20s linear infinite, color-change 8s infinite;
       list-style: none;
   margin: 0;
   padding: 0;

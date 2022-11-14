@@ -7,11 +7,11 @@
 <style scoped>
 button {
   font: inherit;
-  border: 1px solid #360032;
-  background-color: #360032;
+  font-weight: 600;
   color: white;
-  padding: 0.5rem 2rem;
+  background-color: inherit;
   cursor: pointer;
+  transition: .8s 
 }
 
 button:hover,
