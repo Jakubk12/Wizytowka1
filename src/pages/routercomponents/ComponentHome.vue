@@ -16,19 +16,19 @@
     </div>
     <div class="elements">
   <ul class="items"> <h1 class="head">Skills</h1>
-  <li class="">HTML5</li>
-  <li class="">CSS3</li>
-  <li class="">JS</li>
-  <li class="">VueJs</li>
-  <li class="">SASS</li>
-  <li class="">RWD</li>
-  <li class="">SEO</li>
+  <li >HTML5</li>
+  <li >CSS3</li>
+  <li >JS</li>
+  <li >VueJs</li>
+  <li >SASS</li>
+  <li >RWD</li>
+  <li >SEO</li>
   <li>HTTP</li></ul> 
   <ul class="items"> 
     <h1 class="head">Possibilities</h1>
-    <li class="">Create from 0 to 100% web applications at frontend</li>
-  <li class="">Modifications in current sites</li>
-  <li class="">Fixing bugs</li> 
+    <li >Create from 0 to 100% web applications at frontend</li>
+  <li >Modifications in current sites</li>
+  <li >Fixing bugs</li> 
   </ul> 
   </div>
   <div class="empty">
@@ -114,17 +114,17 @@
   background: Yellow;
 }
 
-
+ .main, .last-slider, .elements, .empty {
+  display: flex;
+}
 .last-slider {
     width: 100%;
-    display: flex;
     justify-content: space-around;
       margin-top: 80px;
 
 
 }
 .elements {
-  display: flex;
   justify-content: space-around;
    .items {
     display: block;
@@ -132,7 +132,6 @@
 
 }
 .empty {
-  display: flex;
   justify-content: space-around;
     margin-top: 30vh;
 
