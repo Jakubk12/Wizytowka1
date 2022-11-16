@@ -9,7 +9,8 @@
         <opinions-users v-for="opinion in opinions" 
         :key="opinion.id"
         :name="opinion.name"
-        :rating="opinion.rating"></opinions-users>
+        :rating="opinion.rating"
+      :info="opinion.info"></opinions-users>
       </ul>
     </basic-card>
     </section>
@@ -26,3 +27,11 @@ components: {
 props: ['opinions']
 }
 </script>
+
+<style lang="scss" scoped>
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+</style>

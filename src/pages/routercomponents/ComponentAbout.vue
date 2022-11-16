@@ -1,7 +1,7 @@
 <template>
     <div class="background">
     <survey-component @survey-data="storeData"></survey-component>
-    <opinions-component :results="loadedOpinionsData"></opinions-component>
+    <opinions-component :opinions="loadedOpinionsData"></opinions-component>
     </div>
 </template>
 <style  lang="scss" scoped>
@@ -49,7 +49,6 @@ export default {
         
          this.loadedOpinionsData.push(submitData);
          console.log(submitData)
-
       }
     }
 }

@@ -7,8 +7,8 @@
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" v-model.trim="enteredName" />
         </div>
-        <h3>What is your rate about this card? In first field enter your name</h3>
-        <div class="form-control"><h3>Your Info</h3></div>
+        <h3>What is your rate about this card? Add a simple comment about and select rate from </h3>
+        <div class="form-control"><label for="info">Your info</label></div>
         <input type="text" id="info" name="info" v-model="enteredInfo" />
         <div class="form-control">
           <input type="radio" id="rating-poor" value="poor" name="rating" v-model="chosenRating" />
