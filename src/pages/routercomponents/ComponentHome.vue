@@ -44,7 +44,6 @@
   animation: gradient 15s ease infinite;
 }
 .main {
-    display: flex;
     margin-top: 0;
     height: 90vh;
     margin-bottom: -25vh;

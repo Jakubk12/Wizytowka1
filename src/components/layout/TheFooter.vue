@@ -57,24 +57,23 @@
 /* Set a specific color for each brand */
 
 /* Facebook */
+.fa {
+  color: white;
+
+}
 .fa-facebook {
   background: #3B5998;
   border-radius: 50%;
-  color: white;
 }
 /* Linkedin */
 .fa-linkedin {
   background: #0e76a8;
   border-radius: 50%;
-  color: white;
 
 }
 .fa-github {
     border-radius: 50%;
     background: #171515;
-    color: white
-
-
 }
 </style>
 <script>

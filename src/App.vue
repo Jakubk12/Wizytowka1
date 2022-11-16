@@ -27,5 +27,14 @@ export default {
  .head {
   font-weight: 900;
    text-shadow: 2px 2px 15px green;}
+   /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
 </style>

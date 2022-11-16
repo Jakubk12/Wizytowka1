@@ -41,7 +41,8 @@ export default {
     methods: {
       storeData(opinionData) {
         const submitData  = {  
-          name: opinionData.userInfo,
+          name: opinionData.userName,
+          info: opinionData.userInfo,
           rating: opinionData.rating,
           id: new Date().toISOString()
         }

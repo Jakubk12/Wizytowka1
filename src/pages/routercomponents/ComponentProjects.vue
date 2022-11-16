@@ -24,6 +24,11 @@ data() {
       description: 'A project where are you looking now',
       img: '',
 
+    },
+    {
+    id: 'Validation-project',
+    title: 'Validation',
+    description: 'My first recruitment task',
     }
     ],
   }

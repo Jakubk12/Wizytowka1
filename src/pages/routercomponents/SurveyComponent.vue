@@ -4,10 +4,12 @@
                 <h2>What's your vote in these survey?...</h2>
       <form @submit.prevent="submitData">
         <div class="form-control">
-          <label for="Info">Your Info</label>
-          <input type="text" id="info" name="info" v-model.trim="enteredInfo" />
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" v-model.trim="enteredName" />
         </div>
-        <h3>What is your rate about this card? Vote and enter informations what we can do</h3>
+        <h3>What is your rate about this card? In first field enter your name</h3>
+        <div class="form-control"><h3>Your Info</h3></div>
+        <input type="text" id="info" name="info" v-model="enteredInfo" />
         <div class="form-control">
           <input type="radio" id="rating-poor" value="poor" name="rating" v-model="chosenRating" />
           <label for="rating-poor">Poor</label>
@@ -44,7 +46,7 @@
 
 <script>
 import BasicButton from './UI/BasicButton.vue'
-import BasicCard from './UI/BasicCard.vue'
+import BasicCard from './UI/BasicCard.vue';
 
 export default {
     components: {
@@ -52,26 +54,30 @@ export default {
     },
     data() {
         return {
+            enteredName: '',
             enteredInfo: '',
             chosenRating: null,
             invalidInput: true
+
         }
     },
     emits: ['survey-data'],
     methods: {
         submitData() {
-            if(this.enteredInfo === '' || !this.chosenRating) {
+            if(this.enteredName === '' || this.enteredInfo === '' || !this.chosenRating) {
                 this.invalidInput = true 
                 return;
             }
             this.invalidInput = false;
              this.$emit('survey-data', {
+        userInfo: this.enteredInfo,
         userName: this.enteredName,
         rating: this.chosenRating,
       });
 
       this.enteredName = '';
       this.chosenRating = null;
+      this.enteredInfo = '';
     },
   },
 };
