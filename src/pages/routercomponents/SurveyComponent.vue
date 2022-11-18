@@ -25,14 +25,15 @@
           <label for="rating-average">Average</label>
         </div>
         <div class="form-control">
-          <input type="radio" id="rating-great" value="Nice" name="rating" v-model="chosenRating" />
-          <label for="rating-great">Nice</label>
+          <input type="radio" id="rating-nice" value="Nice" name="rating" v-model="chosenRating" />
+          <label for="rating-nice">Nice</label>
         </div>
          <div class="form-control">
           <input type="radio" id="rating-great" value="great" name="rating" v-model="chosenRating" />
           <label for="rating-great">Extra</label>
         </div>
-        <p v-if="invalidInput">Sorry! One or two fields are empty. Check it and enter data again</p>
+        <p class="alert-negative" v-if="invalidInput == true">Sorry! One / two or three fields are empty. Check it and enter data again</p>
+        <p class="alert-positive" v-if="invalidInput == false">Ok! Your data are correct, you entered all fields</p>
         <div>
           <basic-button>Submit</basic-button>
         </div>
@@ -73,7 +74,8 @@ export default {
         userInfo: this.enteredInfo,
         userName: this.enteredName,
         rating: this.chosenRating,
-      });
+        
+      }); 
 
       this.enteredName = '';
       this.chosenRating = null;
@@ -83,3 +85,17 @@ export default {
 };
 
 </script>
+
+<style lang="scss" scoped>
+.alert {
+ &-negative {
+  font-weight: 900;
+  color: #c83349;
+ }
+ &-positive {
+  color: #405d27;
+  font-weight: 900;
+ }
+}
+
+</style>
