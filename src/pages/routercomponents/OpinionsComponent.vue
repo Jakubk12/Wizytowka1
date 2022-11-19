@@ -3,7 +3,7 @@
         <basic-card>
       <h2>Submitted Opinions</h2>
       <div>
-        <basic-button>Load opinions</basic-button>
+        <basic-button @click="loadOpinions">Load opinions</basic-button>
       </div>
       <ul>
         <opinions-users v-for="opinion in opinions" 
@@ -21,10 +21,37 @@ import BasicCard from './UI/BasicCard.vue';
 import OpinionsUsers from './ChildOpinions/OpinionsUsers.vue'
 
 export default {
+  data() {
+    return {
+      opinions: []
+    }
+  },
 components: {
     BasicButton, BasicCard, OpinionsUsers
-},
-props: ['opinions']
+}, methods: {
+loadOpinions() {
+    fetch('http://localhost:8000/posts/').then
+    ((response) =>{
+      if (response.ok) {
+        return response.json()
+      }
+    })
+    .then((data)=>{
+      this.opinions = data
+        })
+        .then((data)=>{
+          const opinions = [];
+          for (const id in data) {
+            opinions.push({id: id,
+              name: data[id].name,
+              rating: data[id].rating,
+            info: data[id].info,})
+          }
+          this.opinions = opinions;
+        })
+    }
+  
+}
 }
 </script>
 

@@ -23,6 +23,7 @@ library.add(faUserSecret, )
 const app = createApp(App)
 app.use(router)
 app.use(createPinia())
+
 .component('font-awesome-icon', FontAwesomeIcon)
 
 app.mount('#app')

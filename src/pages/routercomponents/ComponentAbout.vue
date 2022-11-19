@@ -1,7 +1,7 @@
 <template>
     <div class="background">
-    <survey-component @survey-data="storeData"></survey-component>
-    <opinions-component :opinions="loadedOpinionsData"></opinions-component>
+    <survey-component></survey-component>
+    <opinions-component></opinions-component>
     </div>
 </template>
 <style  lang="scss" scoped>
@@ -30,27 +30,27 @@
 import SurveyComponent from './SurveyComponent.vue'
 import OpinionsComponent from './OpinionsComponent.vue'
 export default {
-  data() { 
-    return {
-    loadedOpinionsData: []
-  }
-  },
+//  data() { 
+//    return {
+//    loadedOpinionsData: []
+//  }
+//  },
     components: {
         SurveyComponent, OpinionsComponent
     },
     methods: {
-      storeData(opinionData) {
-        const submitData  = {  
-          name: opinionData.userName,
-          info: opinionData.userInfo,
-          rating: opinionData.rating,
-          id: new Date().toISOString()
-        }
-        
-         this.loadedOpinionsData.push(submitData);
-         console.log(submitData)
-      }
-    }
+  //    storeData(opinionData) {
+  //      const submitData  = {  
+  //        name: opinionData.userName,
+  //        info: opinionData.userInfo,
+  //        rating: opinionData.rating,
+  //        id: new Date().toISOString()
+  //      }
+  //      
+  //       this.loadedOpinionsData.push(submitData);
+  //       console.log(submitData)
+  //    }
+   }
 }
 </script>
 

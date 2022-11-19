@@ -1,0 +1,12 @@
+{
+  "posts": [
+    { "id": 1,
+     "title": "submit",
+    "author": "typicode" }
+  ], 
+  "surveys": [
+    {
+      "id": 2, "title" : "loadopinions"
+    }
+  ]
+}

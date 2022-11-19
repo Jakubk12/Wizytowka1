@@ -9,9 +9,9 @@
         </div>
         <h3>What is your rate about this card? Add a simple comment about and select rate from </h3>
         <div class="form-control"><label for="info">Your info</label></div>
-        <input type="text" id="info" name="info" v-model="enteredInfo" />
+        <input type="text" id="info" required placeholder="Info body" name="info" v-model="enteredInfo" />
         <div class="form-control">
-          <input type="radio" id="rating-poor" value="poor" name="rating" v-model="chosenRating" />
+          <input type="radio" required placeholder="Info radio" id="rating-poor" value="poor" name="rating" v-model="chosenRating" />
           <label for="rating-poor">Poor</label>
         </div>
         <div class="form-control">
@@ -25,15 +25,15 @@
           <label for="rating-average">Average</label>
         </div>
         <div class="form-control">
-          <input type="radio" id="rating-nice" value="Nice" name="rating" v-model="chosenRating" />
+          <input type="radio" id="rating-nice" value="nice" name="rating" v-model="chosenRating" />
           <label for="rating-nice">Nice</label>
         </div>
          <div class="form-control">
           <input type="radio" id="rating-great" value="great" name="rating" v-model="chosenRating" />
           <label for="rating-great">Extra</label>
         </div>
-        <p class="alert-negative" v-if="invalidInput == true">Sorry! One / two or three fields are empty. Check it and enter data again</p>
-        <p class="alert-positive" v-if="invalidInput == false">Ok! Your data are correct, you entered all fields</p>
+        <p class="alert-negative" v-if="invalidInput">Sorry! One / two or three fields are empty. Check it and enter data again</p>
+        <p class="alert-positive" v-if="!invalidInput">Ok! Your data are correct, you entered all fields</p>
         <div>
           <basic-button>Submit</basic-button>
         </div>
@@ -62,7 +62,6 @@ export default {
 
         }
     },
-    emits: ['survey-data'],
     methods: {
         submitData() {
             if(this.enteredName === '' || this.enteredInfo === '' || !this.chosenRating) {
@@ -70,13 +69,19 @@ export default {
                 return;
             }
             this.invalidInput = false;
-             this.$emit('survey-data', {
-        userInfo: this.enteredInfo,
-        userName: this.enteredName,
-        rating: this.chosenRating,
-        
-      }); 
-
+        //     this.$emit('survey-data', {
+     //   userInfo: this.enteredInfo,
+     //   userName: this.enteredName,
+     //   rating: this.chosenRating, 
+      fetch('http://localhost:8000/posts/', {
+        method: 'POST',
+        headers: { 'Content-Type' : 'application/JSON' },
+        body: JSON.stringify({ 
+          name: this.enteredName,
+          Info: this.enteredInfo,
+          rating: this.chosenRating
+        })
+      })
       this.enteredName = '';
       this.chosenRating = null;
       this.enteredInfo = '';
