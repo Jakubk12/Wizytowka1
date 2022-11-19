@@ -46,12 +46,10 @@
 
 
 <script>
-import BasicButton from './UI/BasicButton.vue'
-import BasicCard from './UI/BasicCard.vue';
+
 
 export default {
     components: {
-        BasicButton, BasicCard
     },
     data() {
         return {

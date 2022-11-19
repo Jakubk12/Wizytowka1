@@ -4,49 +4,8 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
-    },
-    {
-      "name": "asd",
-      "Info": "qwe",
-      "rating": "great",
-      "id": 2
-    },
-    {
-      "name": "sd",
-      "Info": "qwe",
-      "rating": "great",
-      "id": 3
-    },
-    {
-      "name": "du",
-      "Info": "du",
-      "rating": "poor",
-      "id": 4
-    },
-    {
-      "name": "kuba",
-      "Info": "Good",
-      "rating": "nice",
-      "id": 5
-    },
-    {
-      "name": "kuba",
-      "Info": "Good page",
-      "rating": "nice",
-      "id": 6
-    },
-    {
-      "name": "ku",
-      "Info": "ba",
-      "rating": "nice",
-      "id": 7
-    },
-    {
-      "name": "asd",
-      "Info": "great",
-      "rating": "great",
-      "id": 8
     }
+
   ],
   "comments": [
     {

@@ -2,6 +2,8 @@
     <div class="background">
     <survey-component></survey-component>
     <opinions-component></opinions-component>
+    <information-component></information-component>
+    
     </div>
 </template>
 <style  lang="scss" scoped>
@@ -29,6 +31,7 @@
 <script>
 import SurveyComponent from './SurveyComponent.vue'
 import OpinionsComponent from './OpinionsComponent.vue'
+import InformationComponent  from './InformationComponent.vue';
 export default {
 //  data() { 
 //    return {
@@ -36,7 +39,7 @@ export default {
 //  }
 //  },
     components: {
-        SurveyComponent, OpinionsComponent
+        SurveyComponent, OpinionsComponent, InformationComponent
     },
     methods: {
   //    storeData(opinionData) {

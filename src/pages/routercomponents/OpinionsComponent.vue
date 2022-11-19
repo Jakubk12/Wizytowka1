@@ -16,8 +16,7 @@
     </section>
 </template>
 <script>
-import BasicButton from './UI/BasicButton.vue';
-import BasicCard from './UI/BasicCard.vue';
+
 import OpinionsUsers from './ChildOpinions/OpinionsUsers.vue'
 
 export default {
@@ -27,7 +26,7 @@ export default {
     }
   },
 components: {
-    BasicButton, BasicCard, OpinionsUsers
+     OpinionsUsers
 }, methods: {
 loadOpinions() {
     fetch('http://localhost:3000/posts/').then
