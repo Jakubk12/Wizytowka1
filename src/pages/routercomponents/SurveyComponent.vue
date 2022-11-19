@@ -73,7 +73,7 @@ export default {
      //   userInfo: this.enteredInfo,
      //   userName: this.enteredName,
      //   rating: this.chosenRating, 
-      fetch('http://localhost:8000/posts/', {
+      fetch('http://localhost:3000/posts/', {
         method: 'POST',
         headers: { 'Content-Type' : 'application/JSON' },
         body: JSON.stringify({ 

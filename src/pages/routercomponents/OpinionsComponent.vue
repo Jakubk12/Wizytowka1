@@ -30,7 +30,7 @@ components: {
     BasicButton, BasicCard, OpinionsUsers
 }, methods: {
 loadOpinions() {
-    fetch('http://localhost:8000/posts/').then
+    fetch('http://localhost:3000/posts/').then
     ((response) =>{
       if (response.ok) {
         return response.json()

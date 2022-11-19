@@ -4,6 +4,18 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "name": "kuba",
+      "Info": "Good website",
+      "rating": "nice",
+      "id": 2
+    },
+    {
+      "name": "ku",
+      "Info": "ba",
+      "rating": "great",
+      "id": 3
     }
   ],
   "comments": [
