@@ -9,8 +9,8 @@
 <div class="right"></div>
     </div>
 <div class="last-slider">
-<slider-left-button @click="leftSlide"></slider-left-button>
-    <slider-right-button @click="rightSlide"></slider-right-button>
+<slider-button @click="leftSlide">Left</slider-button>
+    <slider-button @click="rightSlide">Right</slider-button>
     </div>
     </div>
     </div>
@@ -42,9 +42,9 @@
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  height: auto;
 }
 .main {
-    margin-top: 0;
     height: 90vh;
     margin-bottom: -25vh;
 }
@@ -138,13 +138,12 @@
 </style>
 
 <script>
-import SliderLeftButton from './UI/SliderLeftButton.vue';
-import SliderRightButton from './UI/SliderRightButton.vue'
+import SliderButton from './UI/SliderButton.vue';
 
 
 export default {
 components: {
-    SliderLeftButton, SliderRightButton
+    SliderButton,
 },
 data(){
     return {

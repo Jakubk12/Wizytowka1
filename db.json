@@ -6,70 +6,10 @@
       "author": "typicode"
     },
     {
-      "name": "kuba",
-      "Info": "Good website",
-      "rating": "nice",
+      "name": "ads",
+      "Info": "ad",
+      "rating": "great",
       "id": 2
-    },
-    {
-      "name": "ku",
-      "Info": "ba",
-      "rating": "great",
-      "id": 3
-    },
-    {
-      "name": "Jakub",
-      "Info": "Well",
-      "rating": "great",
-      "id": 4
-    },
-    {
-      "name": "A",
-      "Info": "a",
-      "rating": "great",
-      "id": 5
-    },
-    {
-      "name": "Kuba",
-      "Info": "kk",
-      "rating": "great",
-      "id": 6
-    },
-    {
-      "name": "kuba",
-      "Info": "Keska",
-      "rating": "nice",
-      "id": 7
-    },
-    {
-      "name": "Kuba",
-      "Info": "Good Website",
-      "rating": "great",
-      "id": 8
-    },
-    {
-      "name": "durenn",
-      "Info": "Not bad",
-      "rating": "average",
-      "id": 9
-    },
-    {
-      "name": "jan kowalski",
-      "Info": "Average",
-      "rating": "average",
-      "id": 10
-    },
-    {
-      "name": "doo",
-      "Info": "paa",
-      "rating": "nice",
-      "id": 11
-    },
-    {
-      "name": "Kuba",
-      "Info": "My opinion is a API can works better",
-      "rating": "average",
-      "id": 12
     }
   ],
   "comments": [

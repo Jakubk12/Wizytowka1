@@ -1,6 +1,6 @@
 <template>
  <div class="container">
-      <projects-resources v-for="Element in storedElements" :key="Element.id" :title="Element.title" :description="Element.description" :img="Element.img"></projects-resources>
+      <projects-resources v-for="Element in storedElements" :key="Element.id" :title="Element.title" :description="Element.description"></projects-resources>
       </div>
     
 </template>
@@ -15,14 +15,12 @@ data() {
       id: 'project-multipage',
       title: 'project multipage',
       description: 'Simple project about modern technologies in frontend',
-      img: '',
 
     },
     {
       id: 'My-project',
       title: 'My own card',
       description: 'A project where are you looking now',
-      img: '',
 
     },
     {

@@ -9,13 +9,13 @@
         </div>
         <h3>What is your rate about this card? Add a simple comment about and select rate from </h3>
         <div class="form-control"><label for="info">Your info</label></div>
-        <input type="text" id="info" required placeholder="Info body" name="info" v-model="enteredInfo" />
+        <input type="text" id="info" name="info" v-model="enteredInfo" />
         <div class="form-control">
-          <input type="radio" required placeholder="Info radio" id="rating-poor" value="poor" name="rating" v-model="chosenRating" />
+          <input class="options" type="radio" required placeholder="Info radio" id="rating-poor" value="poor" name="rating" v-model="chosenRating" />
           <label for="rating-poor">Poor</label>
         </div>
         <div class="form-control">
-          <input
+          <input class="options"
             type="radio"
             id="rating-average"
             value="average"
@@ -25,11 +25,11 @@
           <label for="rating-average">Average</label>
         </div>
         <div class="form-control">
-          <input type="radio" id="rating-nice" value="nice" name="rating" v-model="chosenRating" />
+          <input class="options" type="radio" id="rating-nice" value="nice" name="rating" v-model="chosenRating" />
           <label for="rating-nice">Nice</label>
         </div>
          <div class="form-control">
-          <input type="radio" id="rating-great" value="great" name="rating" v-model="chosenRating" />
+          <input class="options" type="radio" id="rating-great" value="great" name="rating" v-model="chosenRating" />
           <label for="rating-great">Extra</label>
         </div>
         <p class="alert-negative" v-if="invalidInput">Sorry! One / two or three fields are empty. Check it and enter data again</p>

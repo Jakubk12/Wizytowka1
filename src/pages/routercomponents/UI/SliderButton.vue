@@ -1,9 +1,9 @@
 <template>
-    <button class="switch-left">Left</button>
+    <button class="switch"><slot></slot></button>
 </template>
 
 <style lang="scss" scoped>
-.switch-left {
+.switch {
      height: 4%;
         background: #80ced6;
         float: left;
@@ -16,6 +16,7 @@
         width: 8%;
         text-decoration: white;
         
+        
     &:hover{
         background: #FF521B;
         text-decoration: black;
@@ -25,8 +26,8 @@
     }
     }
         @media all and (max-width:900px) {
-            .switch-left {
-            width: 15%;
+            .switch {
+            width: 20%;
             }
         }
     

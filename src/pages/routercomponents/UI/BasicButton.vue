@@ -11,7 +11,9 @@ button {
   color: white;
   background-color: inherit;
   cursor: pointer;
-  transition: .8s 
+  transition: .8s;
+  border: 1px;
+   
 }
 
 button:hover,
