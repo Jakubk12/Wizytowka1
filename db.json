@@ -10,6 +10,18 @@
       "Info": "ad",
       "rating": "great",
       "id": 2
+    },
+    {
+      "name": "Kuba",
+      "Info": "Very well-made fake API",
+      "rating": "great",
+      "id": 3
+    },
+    {
+      "name": "Ok",
+      "Info": "OK",
+      "rating": "great",
+      "id": 4
     }
   ],
   "comments": [
