@@ -1,6 +1,7 @@
 <template>
   <section>
             <basic-card>
+              <div class="background">
                 <h2>What's your vote in these survey?...</h2>
       <form @submit.prevent="submitData">
         <div class="form-control">
@@ -38,6 +39,7 @@
           <basic-button>Submit</basic-button>
         </div>
       </form>
+      </div>
             </basic-card>
 
         </section>
@@ -90,6 +92,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .alert {
  &-negative {
   font-weight: 900;
