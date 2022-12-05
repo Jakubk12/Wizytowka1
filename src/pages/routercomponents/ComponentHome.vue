@@ -118,20 +118,18 @@
 }
 .last-slider {
     width: 100%;
-    justify-content: space-around;
       margin-top: 80px;
 
 
 }
-.elements {
+.last-slider, .empty, .elements {
   justify-content: space-around;
+
+}
    .items {
     display: block;
    }
-
-}
 .empty {
-  justify-content: space-around;
     margin-top: 30vh;
 
 }
