@@ -27,6 +27,11 @@ data() {
     id: 'Validation-project',
     title: 'Validation',
     description: 'My first recruitment task',
+    },
+    {
+    id: 'Online-shop-project',
+    title: 'Project of a online shop',
+    description: 'My first bigger and advanced project, still in preparing...',
     }
     ],
   }
